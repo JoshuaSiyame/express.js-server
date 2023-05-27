@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshcodingenv/express_js_fundamentals.git"
+    "url": "https://github.com/joshcodingenv/express.js-server.git"
   },
   "author": "joshcodingenv",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joshcodingenv/express_js_fundamentals/issues"
+    "url": "https://github.com/joshcodingenv/express.js-server/issues"
   },
-  "homepage": "https://github.com/joshcodingenv/express_js_fundamentals#readme",
+  "homepage": "https://github.com/joshcodingenv",
   "dependencies": {
     "express": "^4.18.2"
   }
