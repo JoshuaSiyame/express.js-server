@@ -11,3 +11,8 @@ This will install all the dependencies for the project and then run
 This command will start your server
 
 Go to your browser and check the endpoints Thats it thanks for being here.😊
+
+The available endpoints are
+
+/test -testing route with normal function and request and response beginner syntax
+/ - home route with advanced developer syntax
