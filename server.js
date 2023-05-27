@@ -1,6 +1,15 @@
 // import the required modules/packages
 const express = require("express");
 const http = require("http");
+const mongoose = require("mongoose");
+
+// configure to database
+mongoose.set("strictQuery", false);
+mongoose.connect("mongodb://127.0.0.1:27017/express-server").then(()=>{
+    console.log("Connected to database");
+}).catch((err)=>{
+    console.log("Failed to connect to Database", err);
+});
 
 // import routes
 const appRoutes = require("./routes/appRoutes");
