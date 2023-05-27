@@ -2,6 +2,7 @@
 const express = require("express");
 const http = require("http");
 const mongoose = require("mongoose");
+const logger = require("morgan");
 
 // configure to database
 mongoose.set("strictQuery", false);
@@ -18,6 +19,9 @@ const port = 3000;
 
 // app instance
 const app = express();
+
+// app configurations
+app.use(logger("dev"));
 
 // configure app to use routes
 app.use("/", appRoutes);
