@@ -16,4 +16,17 @@ The available endpoints are
 
 /test -testing route with normal function and request and response beginner syntax
 
-/ - home route with advanced developer syntax
+Get all users from database
+GET /users
+
+Get user by Id 
+GET /user/:userId
+
+Create a new user
+Post /new-user
+
+Update user data based on Id
+PUT /user/:userId
+
+Delete user based on requested Id
+DELETE /user/:userId
