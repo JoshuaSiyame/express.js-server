@@ -66,7 +66,7 @@ router.post("/new-user", async (req, res)=>{
     });
 
     // check user data before submitting to database
-    console.log(newUser);
+    // console.log(newUser);
 
     // save the newUser to the database
     const savedUser = await newUser.save();
@@ -78,6 +78,9 @@ router.post("/new-user", async (req, res)=>{
 router.put("/user/:userId", async (req, res)=>{
     // get requested id
     const userId = req.params.userId;
+
+    // perform object destructuring to obtain content of the body
+    const { username, email, age } = req.body;
 
     // check user existence
     const existingUser = await User.findById(userId);
