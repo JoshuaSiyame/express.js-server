@@ -1,4 +1,4 @@
-# Express.js fundamentals, Building web apps
+# Basic Express.js server.
 
 Welcome to this simple repo where you will simple have an express.js server running in not time.
 First thing is to download the project and run
