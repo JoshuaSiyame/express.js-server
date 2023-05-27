@@ -3,6 +3,7 @@ const express = require("express");
 const http = require("http");
 const mongoose = require("mongoose");
 const logger = require("morgan");
+const bodyParser = require("body-parser");
 
 // configure to database
 mongoose.set("strictQuery", false);
@@ -22,6 +23,8 @@ const app = express();
 
 // app configurations
 app.use(logger("dev"));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // configure app to use routes
 app.use("/", appRoutes);
