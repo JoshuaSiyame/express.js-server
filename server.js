@@ -2,18 +2,16 @@
 const express = require("express");
 const http = require("http");
 
+// import routes
+const appRoutes = require("./routes/appRoutes");
+
 const port = 3000;
 
 // app instance
 const app = express();
 
-app.get("/test", function(request, response){
-    response.send("Testing route working");
-});
-
-app.get("/", (req, res)=>{
-    res.send("Welcome home dev");
-});
+// configure app to use routes
+app.use("/", appRoutes);
 
 // server instance
 const server = http.createServer(app);
